@@ -7,5 +7,5 @@ RUN docker-php-ext-install mysqli && \
     curl --location --output sitepress.zip https://www.classicpress.net/latest.zip && \
     unzip sitepress.zip && \
     rm -r /var/www/html && \
-    find . -name 'ClassicPress*' | xargs -I'{}' mv '{}' /var/www/html && \
+    mv ClassicPress* /var/www/html && \
     chown -R www-data:www-data /var/www/html
