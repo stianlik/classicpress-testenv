@@ -10,5 +10,8 @@ local docker image and launch a test environment running PHP 7.4 and MariaDB.
 5. Start testing
 
 To test your plugins or themes using a different PHP version, modify the first
-line in `Dockerfile`.  E.g. to test a plugin using PHP 8, change the first line
-from `FROM php:7.4-apache` to `FROM php:8.0-apache`.
+line in `Dockerfile`. E.g. to test a plugin using PHP 8, change the first line
+from `FROM php:7.4-apache` to `FROM php:8.0-apache`. Refer to [the base
+image](https://hub.docker.com/_/php) for instructions on how to enable or
+install additional php extensions (`docker-php-ext-configure`,
+`docker-php-ext-install`, and `docker-php-ext-enable`).
